@@ -795,7 +795,6 @@
 //   );
 // }
 
-
 "use client";
 
 import { useState, useEffect, useRef } from "react";
@@ -1016,24 +1015,24 @@ export default function Home() {
       id: 1,
       title: "NextHire",
       subtitle: "Job Portal & Recruitment Platform",
-      description: "Production-grade microservices platform with 5 independent REST services (auth, user, jobs, payments, uploads). Nginx API gateway, read/write DB separation with Neon replicas, JWT + Redis token management, BullMQ async email queuing, Stripe premium subscriptions, and a Gemini AI–powered resume analyzer. CI/CD via GitHub Actions with centralized Grafana Loki logging.",
-      image: "/broCars.png",
-      technologies: ["Node.js", "TypeScript", "Next.js", "PostgreSQL", "Redis", "BullMQ", "Stripe", "Nginx", "GitHub Actions", "Grafana Loki"],
+      description: "Architected a scalable microservices-based job portal with 5 independent REST API services (auth, user, jobs, payments, uploads) using Node.js & TypeScript. Engineered JWT + Redis token management, RBAC, and secure password reset via Nodemailer. Integrated Stripe for premium subscriptions, Cloudinary for media, Gemini AI resume analyzer, BullMQ async email queuing, rate limiting & DDoS protection. Configured Nginx API gateway for path-based routing across all services, read/write DB separation via Neon replicas, CI/CD with GitHub Actions, and centralized logging with Grafana Loki + Winston. Full Swagger API documentation.",
+      image: "/nexthire.png",
+      technologies: ["Node.js", "TypeScript", "Next.js", "PostgreSQL", "Redis", "BullMQ", "Stripe", "Nginx", "GitHub Actions", "Grafana Loki", "Gemini AI"],
       github: "https://github.com/prajwal2301negi",
-      live: "https://nexthire.prajwalnegi.site/",
+      live: "https://next-hire-phi.vercel.app/",
       featured: true,
       tag: "Microservices",
-      highlights: ["5 Independent Services", "Read/Write DB Separation", "BullMQ + AI Resume Analyzer"],
+      highlights: ["5 Independent Services", "Nginx API Gateway", "BullMQ + Gemini AI"],
     },
     {
       id: 2,
       title: "MuscleKart",
       subtitle: "Supplement E-Commerce & Delivery Platform",
-      description: "6-service event-driven microservices platform for on-demand gym supplement delivery. RabbitMQ inter-service messaging with retry/fault-tolerance, real-time rider tracking via MongoDB geospatial queries, Haversine distance calculation, 3 user roles (Customer, Rider, Admin), Stripe payments, and Cloudinary media storage.",
-      image: "/AIFashionAnalyzer.png",
+      description: "Built a production-grade microservices platform for on-demand gym supplement ordering & delivery across 6 services (Auth, Store, Rider, Payment, Realtime, Job) using Node.js, TypeScript & MongoDB. Engineered event-driven architecture using RabbitMQ for async inter-service communication across payment, order & rider assignment pipelines with retry logic & fault-tolerance. Implemented real-time rider tracking, MongoDB geospatial queries for proximity-based store discovery, and Haversine distance calculation across 3 user roles (Customer, Rider, Owner/Admin). Integrated Stripe payments, JWT RBAC, deployed across Vercel, Render, CloudAMQP & MongoDB Atlas.",
+      image: "/musclekart.png",
       technologies: ["Node.js", "TypeScript", "React", "MongoDB", "RabbitMQ", "Stripe", "Cloudinary", "Vercel", "Render"],
       github: "https://github.com/prajwal2301negi",
-      live: "#",
+      live: "https://muscle-kart.vercel.app/",
       featured: true,
       tag: "Event-Driven",
       highlights: ["6 Microservices", "RabbitMQ Event Bus", "Real-Time Geolocation"],
@@ -1042,45 +1041,33 @@ export default function Home() {
       id: 3,
       title: "BroCars",
       subtitle: "Full-Stack Car Marketplace",
-      description: "Full-stack car marketplace with DDoS-protected Express backend, secure authentication, car listing uploads, test drive booking, and admin dashboard with interactive sales analytics and moderation tools.",
+      description: "Built a full-stack car marketplace using Next.js, ShadCN, TypeScript, Express.js (with DDoS protection) & MongoDB, ensuring 99.9% uptime and scalable performance. Enabled secure authentication, test drive requests, car listings with image uploads, and advanced filtering by brand, model & price. Developed a role-based admin dashboard managing 100% of listings & test drive requests, with interactive sales analytics improving operational oversight by 70%. Digitized 90% of traditional dealership processes, increasing verified sales conversions by 60%.",
       image: "/broCars.png",
       technologies: ["Express.js", "Next.js", "TypeScript", "MongoDB", "ShadCN", "Cloudinary"],
       github: "https://github.com/prajwal2301negi/BroCars-Full_Stack_Car_Marketplace",
       live: "https://bro-cars.vercel.app/",
       featured: true,
       tag: "Full Stack",
-      highlights: ["DDoS Protection", "Admin Analytics", "Secure Auth"],
+      highlights: ["DDoS Protection", "70% Better Oversight", "60% Sales Conversion↑"],
     },
     {
       id: 4,
       title: "LawScope",
       subtitle: "AI-Powered Legal Assistant",
-      description: "Intelligent legal assistant that analyzes uploaded PDFs and plain text using Gemini AI, simplifying complex legal terms into plain language. Users can describe real-life legal situations by taking on roles like landlord, employee, employer, etc.",
+      description: "Built a legal assistant web app using Next.js, TypeScript, ShadCN & Gemini AI that bridges the legal knowledge gap by simplifying complex legal documents uploaded as PDFs or plain text into clear, actionable language. Enables users to describe real-life legal scenarios (e.g., renter, employer) and receive AI-generated legal advice with relevant sections and recommended next steps.",
       image: "/lawscope.png",
       technologies: ["Next.js", "TypeScript", "ShadCN", "Gemini AI"],
       github: "https://github.com/prajwal2301negi/Lawscope-AI-Powered_Legal_Assistant",
       live: "https://lawscope.vercel.app",
       featured: true,
       tag: "AI/LLM",
-      highlights: ["PDF Analysis", "Role-Based Legal Scenarios", "Gemini Integration"],
+      highlights: ["PDF Legal Analysis", "Role-Based AI Advice", "Gemini Integration"],
     },
     {
       id: 5,
-      title: "AI Fashion Analyzer",
-      subtitle: "Style Assessment with Computer Vision",
-      description: "AI-driven fashion platform using Gemini to analyze user-uploaded photos, predict body measurements, and deliver personalized shopping experiences. Clerk authentication with robust middleware protection.",
-      image: "/AIFashionAnalyzer.png",
-      technologies: ["React.js", "TypeScript", "Clerk", "ShadCN", "Gemini AI"],
-      github: "https://github.com/prajwal2301negi/StyleIQ-AI_Powered_Fashion_Assistant",
-      live: "https://ai-fashion-analyzer.vercel.app",
-      featured: false,
-      tag: "AI/CV",
-    },
-    {
-      id: 6,
       title: "CodeHatch",
       subtitle: "Tech Resource Hub for Students",
-      description: "Centralized educational platform aggregating 60+ curated CS resources across 13 categories. Features a 4-Year Coding Journey roadmap — a structured timeline guiding students from foundations to industry-readiness.",
+      description: "Solved unstructured learning by curating a 4-year roadmap (DSA → MERN → ML/DL → Cybersecurity → Blockchain) trusted by 500+ students. Aggregates 60+ curated categories and 600+ hours of high-quality coding resources. Guides users from fundamentals to placement-ready through structured projects, hackathon prep, and industry-aligned learning paths.",
       image: "/codeHatch.png",
       technologies: ["React.js", "Next.js"],
       github: "https://github.com/prajwal2301negi/CodeHatch-Tech_Resource_Hub",
@@ -1089,13 +1076,26 @@ export default function Home() {
       tag: "EdTech",
     },
     {
+      id: 6,
+      title: "BookMySalon",
+      subtitle: "Online Salon Appointment Booking App",
+      description: "Cross-platform mobile app (Android & iOS) for real-time salon appointment booking using Flutter & Firebase. Implemented secure Firebase Authentication, Firestore-powered real-time booking management, dynamic service listings with pricing & availability, and responsive UI screens covering onboarding, service details, order tracking & profile management.",
+      image: "/broCars.png",
+      technologies: ["Flutter", "Dart", "Firebase Auth", "Firestore"],
+      github: "https://github.com/prajwal2301negi",
+      live: "",
+      featured: false,
+      tag: "Mobile",
+    },
+    {
       id: 7,
       title: "OpenCV Vision Suite",
       subtitle: "Hand Gesture Control Projects",
-      description: "Collection of real-time computer vision projects: virtual coffee machine with finger-pattern navigation, system volume control via thumb-index distance tracking, and a virtual QWERTY keyboard with pinch-gesture typing.",
+      description: "Collection of real-time computer vision projects: virtual coffee machine with finger-pattern navigation, system volume control via thumb-index distance tracking, and a virtual QWERTY keyboard with pinch-gesture typing — all using webcam hand landmark detection.",
       image: "/coffeeMachine.jpg",
       technologies: ["Python", "OpenCV"],
       github: "https://github.com/prajwal2301negi/OpenCVProjects",
+      live: "",
       featured: false,
       tag: "Computer Vision",
     },
@@ -1116,6 +1116,7 @@ export default function Home() {
     "AI/CV": "bg-pink-500/10 text-pink-400 border-pink-500/30",
     "EdTech": "bg-blue-500/10 text-blue-400 border-blue-500/30",
     "Computer Vision": "bg-orange-500/10 text-orange-400 border-orange-500/30",
+    "Mobile": "bg-rose-500/10 text-rose-400 border-rose-500/30",
   };
 
   return (
@@ -1646,13 +1647,19 @@ export default function Home() {
                   <h3 className="text-white font-semibold text-sm mb-1">{project.title}</h3>
                   <p className="text-slate-500 text-xs font-mono mb-3">{project.subtitle}</p>
                   <p className="text-slate-400 text-xs leading-relaxed mb-4 line-clamp-3">{project.description}</p>
-                  <div className="flex flex-wrap gap-1">
+                  <div className="flex flex-wrap gap-1 mb-3">
                     {project.technologies.map((tech) => (
                       <span key={tech} className="text-xs font-mono px-1.5 py-0.5 rounded bg-white/[0.03] text-slate-600 border border-white/[0.05]">
                         {tech}
                       </span>
                     ))}
                   </div>
+                  {project.live && (
+                    <a href={project.live} target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-500 hover:text-cyan-300 transition-colors">
+                      <ExternalLink className="w-3 h-3" />Live Demo
+                    </a>
+                  )}
                 </motion.div>
               ))}
             </div>
